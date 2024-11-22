@@ -1,0 +1,36 @@
+{
+  "employee": [
+    {
+      "name": "Manish",
+      "id": 121,
+      "sub": "Js"
+    },
+    {
+      "name": "Manish",
+      "id": 121,
+      "sub": "Js"
+    },
+    {
+      "name": "Manish",
+      "id": 121,
+      "sub": "Js"
+    }
+  ],
+  "Student": [
+    {
+      "name": "Manish",
+      "id": 121,
+      "sub": "Js"
+    },
+    {
+      "name": "Manish",
+      "id": 121,
+      "sub": "Js"
+    },
+    {
+      "name": "Manish",
+      "id": 121,
+      "sub": "Js"
+    }
+  ]
+}

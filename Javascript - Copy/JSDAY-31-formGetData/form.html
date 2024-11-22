@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #9db740;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Sign up</h1>
+    <form class="form-control">
+      <div>
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          placeholder="User Name"
+        />
+        <br /><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+        /><br /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Email Id "
+        /><br /><br />
+
+        <input
+          type="number"
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="Enter phone number"
+        /><br /><br />
+        <input type="date" id="date" name="date" /><br /><br />
+
+        <label for="percentage">Percentage</label>
+        <input type="range" id="range" name="percentage" value="50" min="0" max="100" />
+        <span id="percentage">5
+          0</span> <br /><br />
+      </div>
+      <label for="gender" value="male">Gender :</label><br />
+      Male<input type="radio" id="male" name="gender" value="male" checked />
+      Female<input type="radio" id="female" name="gender" value="female" />
+      Others<input type="radio" id="Others" name="gender" value="female" />
+      <br /><br />
+      <label for="courses1">Courses : </label> <br />
+      <div id="courses1">
+        <input type="checkbox" name="courses1" value="HTML" id="html" /> HTML
+        <input type="checkbox" name="courses1" value="CSS" id="css" /> CSS
+        <input type="checkbox" name="courses1" value="JS" id="js" /> JS
+        <input type="checkbox" name="courses1" value="JAVA" id="java" /> JAVA
+        <input type="checkbox" name="courses1" value="SQL" id="sql" />SQL
+        <br /><br />
+      </div>
+      Country :
+      <select name="country" id="country">
+        <option value="" disabled selected>Select countries</option>
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="Nepal">Nepal</option>
+      </select>
+      <br /><br />
+      <input id="color" type="color" name="color" value="#9db740" /><br /><br />
+      <button>Submit</button>
+    </form>
+    <script src="form.js"></script>
+  </body>
+</html>
