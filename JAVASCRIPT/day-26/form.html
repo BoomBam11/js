@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form-control{
+            display: grid;
+            flex-direction: column;
+            gap: 10px;
+            margin: 100px;
+            padding: 10px;
+        }
+        button{
+            width: 50px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <form class="form-control">
+        <h1>LOG IN</h1>
+        <input type="text" name="username" id="username" placeholder="Enter Username" >
+        <input type="password" name="password" id="password" placeholder="Enter password" >
+        <input type="email" name="email" id="email" placeholder="Enter email" >
+        <input type="tel" name="phone" id="phone" placeholder="phone" >
+
+        <div >
+            <input type="range"/>
+
+
+        </div>
+
+        <label for="gender">Select Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender" id="male" placeholder="male" > male
+            <input type="radio" name="gender" id="female" placeholder="female" > female
+            <input type="radio" name="gender" id="other" placeholder="other" > others
+        </div>
+        
+        <label for="skills">Select skills</label>
+        <div class="gender">
+            <input type="checkbox" name="skills" id="js" value="javascript"> JS
+            <input type="checkbox" name="skills" id="java" value="java" > java
+            <input type="checkbox" name="skills" id="node" value="node" > node
+            <input type="checkbox" name="skills" id="express" value="express" > express
+            <input type="checkbox" name="skills" id="sql" value="sql" > sql
+        </div>
+        <button type="submit" >LogIn</button>
+    <script src="./form.js"></script>
+</body>
+</html>
