@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      i {
+        font-size: 150px;
+        color: red;
+        animation-name: heartBeat;
+        animation-duration: 0.5s;
+        transition: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes heartBeat {
+        from {
+          color: yellow;
+          scale: 0.5;
+        }
+        to {
+          color: red;
+          scale: 1.05;
+        }
+      }
+
+      @keyframes btnBeat {
+        from {
+          color: yellow;
+        }
+        to {
+          color: red;
+        }
+      }
+      @keyframes btnBeat2 {
+        from {
+          color: yellow;
+          scale: 0.95;
+        }
+        to {
+          color: red;
+          scale: 1.05;
+        }
+      }
+
+      .changeState {
+        display: none;
+      }
+
+      button {
+        width: 150px;
+        height: 50px;
+        font-size: 35px;
+        background: linear-gradient(0deg, red, yellow);
+        border: white;
+        border-radius: 15px;
+        color: yellow;
+        animation-name: btnBeat;
+        animation-duration: 0.5s;
+        transition: ease;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">Hide</button>
+    <br />
+    <div id="box"><i class="fa-solid fa-heart"></i></div>
+    
+    <script src="hideDisplay.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        color: azure;
+      }
+      body {
+        background-color: black;
+        color: white;
+        overflow: hidden;
+      }
+      table {
+        width: 80%;
+        margin: auto;
+      }
+      table,
+      th,
+      td {
+        font-size: 13px;
+        color: black;
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-radius: 4px;
+      }
+      th,
+      td {
+        text-align: center;
+        /* background-color: #96d4d4; */
+        background-color: transparent;
+      }
+
+      th:hover,
+      td:hover {
+        background: linear-gradient(
+          180deg,
+          rgb(213, 197, 197),
+          yellow
+        ) !important;
+      }
+      table {
+        animation-name: bg;
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+    }
+
+      @keyframes bg {
+        0% {
+          background: linear-gradient(45deg, #93a5cf, #e4efe9);
+          transition: all ease 1s;
+          /* opacity: 0; */
+
+        }
+        25% {
+          /* background: linear-gradient(45deg,#e4efe9, #93a5cf); */
+          background: linear-gradient(45deg,#aaef09, #93a5cf);
+          transition: all ease 1s;
+        }
+        50% {
+          background: linear-gradient(45deg,#93a5cf,#e4efe9);
+          transition: all ease 1s;
+        }
+        100% {
+          background: linear-gradient(45deg, #e4efe9,#93a5cf );
+          transition: all ease 1s;
+        }
+      }
+      
+      button{
+        color: black;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>NAME</th>
+          <th>USERNAME</th>
+          <th>EMAIL</th>
+          <th>PHONE</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div id="container"></div>
+    <script src="fetchTablecopy.js"></script>
+  </body>
+</html>

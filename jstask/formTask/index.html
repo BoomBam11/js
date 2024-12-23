@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+        width: 20%;
+        height: 100vh;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      #dataContainer {
+        height: 150px;
+        /* border: 1px solid red; */
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        overflow-y: auto;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Sign up</h1>
+    <form>
+      <div>
+        <input
+          type="text"
+          id="userName"
+          name="userName"
+          placeholder="User Name"
+        /><br /><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Password"
+        /><br /><br />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Email Id "
+        /><br /><br />
+        <input
+          type="number"
+          id="percentage"
+          name="percentage"
+          placeholder="Enter percentage"
+        /><br /><br />
+        <input
+          type="number"
+          id="phoneNumber"
+          name="phoneNumber"
+          placeholder="Enter phone number"
+        /><br /><br />
+        <input type="date" id="date" name="date" /><br /><br />
+      </div>
+      <label for="gender" value="male">Gender</label><br />
+      Male<input type="radio" id="male" name="gender" value="male" checked />
+      Female<input
+        type="radio"
+        id="female"
+        name="gender"
+        value="female"
+      /><br />
+      <button>Submit</button>
+    </form>
+    <div><div id="dataContainer"></div></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
